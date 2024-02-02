@@ -3,7 +3,7 @@ import React, { useState, useEffect, useContext } from "react";
 import { TextField, Box, Button, Typography, styled } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 
-import { API } from "../../service/api";
+import { API, userSignup, userLogin } from "../../service/api";
 import { DataContext } from "../../context/DataProvider";
 
 const Component = styled(Box)`
@@ -98,7 +98,8 @@ const Login = ({ isUserAuthenticated }) => {
   };
 
   const loginUser = async () => {
-    let response = await API.userLogin(login);
+    // let response = await API.userLogin(login);
+    let response = await userLogin(login);
     if (response.isSuccess) {
       showError("");
 
@@ -115,8 +116,8 @@ const Login = ({ isUserAuthenticated }) => {
         username: response.data.username,
       });
 
-      isUserAuthenticated(true);
       setLogin(loginInitialValues);
+      isUserAuthenticated(true);
       navigate("/");
     } else {
       showError("Something went wrong! please try again later");
@@ -124,7 +125,8 @@ const Login = ({ isUserAuthenticated }) => {
   };
 
   const signupUser = async () => {
-    let response = await API.userSignup(signup);
+    // let response = await API.userSignup(signup);
+    let response = await userSignup(signup);
     if (response.isSuccess) {
       showError("");
       setSignup(signupInitialValues);

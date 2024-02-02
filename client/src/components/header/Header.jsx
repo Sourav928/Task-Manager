@@ -1,7 +1,9 @@
 import { AppBar, Toolbar, styled, Button, Box } from "@mui/material";
+import { useContext } from "react";
 import { Link } from "react-router-dom";
 
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
+import { DataContext } from "../../context/DataProvider";
 
 const Component = styled(AppBar)`
   background: #ffffff;
@@ -10,6 +12,8 @@ const Component = styled(AppBar)`
 
 const Image = styled("img")({
   width: 50,
+  height: 50,
+  padding: "5px",
 });
 
 const Container = styled(Toolbar)`
@@ -21,31 +25,29 @@ const Container = styled(Toolbar)`
   }
 `;
 
-const Marq = styled("marquee")`
-  font-size: 20px;
+const StyledBox = styled(Box)`
+  display: flex;
+  align-items: center;
 `;
+
 const LoginButton = styled(Button)`
   padding: 5px;
 `;
 const Header = () => {
-  const navigate = useNavigate();
-
-  //   const logout = async () => navigate("/account");
+  // const navigate = useNavigate();
+  // const logout = async () => navigate("/account");
   const imageURL =
-    "https://i.pinimg.com/280x280_RS/7c/bc/f4/7cbcf49bc436f750e8d4818256c1833b.jpg";
+    "https://upload.wikimedia.org/wikipedia/commons/2/2c/Default_pfp.svg";
+  const { account } = useContext(DataContext);
 
   return (
     <Component>
       <Container>
-        <Link to="/">
+        <StyledBox>
           <Image src={imageURL} alt="blog" />
-        </Link>
-        <Box>
-          <Marq>
-            "Unleash Your Thoughts, Craft Your Voice - Your Journey in through
-            Madhyam."
-          </Marq>
-        </Box>
+          <h3>{account.name}</h3>
+        </StyledBox>
+
         <Link to="/account">
           <LoginButton variant="outlined">Logout</LoginButton>
         </Link>

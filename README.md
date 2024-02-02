@@ -1,5 +1,5 @@
 <h1 align = 'center'>
-  Madhyam - A MERN Stack Blogging Website
+   Task-Manager - MERN and AWS DynamoDB
 </h1>
 <div align = 'center'>
               
@@ -9,16 +9,30 @@
 
 </div>
 
-![image](https://github.com/Sourav928/Story2/assets/76393038/5620eef2-24c6-441c-ba20-505ab617f05d)
+![image](https://github.com/Sourav928/Maadhyam/assets/76393038/462dc8b3-4916-4510-8689-50b0ae893d1c)
+![image](https://github.com/Sourav928/Maadhyam/assets/76393038/cbc50db1-620a-434c-9f42-edc2d834a136)
+![image](https://github.com/Sourav928/Maadhyam/assets/76393038/ef8a31d0-0b06-418a-b1d7-8b5755319c97)
+![image](https://github.com/Sourav928/Maadhyam/assets/76393038/2f71a4b9-d942-468a-b166-a53a125f3f31)
+![image](https://github.com/Sourav928/Maadhyam/assets/76393038/1de4b541-7841-4607-abb0-f68a8aba72f6)
 
  <h3>Description</h3>
- This is the repository for Madhyam-Bloging application built using the powerful MERN (MongoDB, Express.js, React, Node.js) stack. It features a user-friendly interface with Material UI for a modern look and feel. The application allows users to create an account, log in securely, publish and manage their blogs across various categories. Additionally, users can explore and comment on posts from other authors.
+ This is the repository for Task-managment application built using the powerful MERN (MongoDB, Express.js, React, Node.js) stack along with AWS. It features a user-friendly interface with Material UI for a modern look and feel. The application allows users to create an account, log in securely, add and manage their tasks across platform Additionally, users can explore and comment on posts from other authors.
+
+ <h3>Mobile-Table-Desktop views</h3>
+ 
+![image](https://github.com/Sourav928/Maadhyam/assets/76393038/ced7410f-fc4c-45b2-be20-81515cbe38a4)
+![image](https://github.com/Sourav928/Maadhyam/assets/76393038/e3050a19-33e2-456b-8d23-07eab85588c5)
+![image](https://github.com/Sourav928/Maadhyam/assets/76393038/aa37be9f-3fdf-4f51-9413-fd62c6a73a8e)
+
+![image](https://github.com/Sourav928/Maadhyam/assets/76393038/201aaff9-1fb3-465b-86cf-25c1c9f5a221)
+![image](https://github.com/Sourav928/Maadhyam/assets/76393038/d550e00d-3486-425a-ab2d-392442d3eaf2)
+![image](https://github.com/Sourav928/Maadhyam/assets/76393038/477a2a98-24b7-46d7-a811-de1119c6f1d4)
 
  <h3>Features</h3>
  <ul>
    <li>User Authentication</li>
-   <li>Blog Management</li>
-   <li>Category Organization</li>
+   <li>Task Management</li>
+   <li>Responsive</li>
    <li>Comments</li>
  </ul>
 
@@ -40,7 +54,7 @@ Clone the repository:
 
 ```bash
 # Get the latest snapshot
-git clone https://github.com/Sourav928/Madhyam.git
+git clone https://github.com/Sourav928/Task-Manager.git
 
 # Install NPM dependencies
 npm install dependencies
